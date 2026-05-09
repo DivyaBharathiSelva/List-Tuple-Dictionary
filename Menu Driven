@@ -1,0 +1,31 @@
+l=[]
+n=int(input("Enter no.of.elements:"))
+print("Enter the elements:")
+for i in range(n):
+    element=int(input())
+    l.append(element)	
+while True:
+    print("1.Maximum value")
+    print("2.Minimum value")
+    print("3.Slice")
+    print("4.Count occurrence")
+    print("5.first occurrence")
+    print("6.Exit")
+    choice=int(input("Enter choice:"))
+    if choice==1:
+        print("Maximum value:",max(l))
+    elif choice==2:
+        print("Minimum value:",min(l))
+    elif choice==3:
+        s=int(input("starting index:"))
+        e=int(input("ending index:"))
+        print("Slice:",l[s:e])
+    elif choice==4:
+        x=int(input("enter element to be count the occurrence:"))
+        print("Count of the element:",x,":",l.count(x))
+    elif choice==5:
+        x=int(input("Enter element for first occurrence:"))
+        print("First occurrence:",l.index(x))
+    elif choice==6:
+        print("Exit")
+        break
