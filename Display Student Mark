@@ -1,0 +1,12 @@
+d={}
+x=int(input("Enter no.of.student:"))
+for i in range(x):
+    n=input("Enter Name:")
+    m=input("Enter Marks:")
+    d[n]=m
+print(d)
+name=input("Enter the searching student name:")
+if name in d:
+    print(name,":",d[name])
+else:
+    print("Student not found")
